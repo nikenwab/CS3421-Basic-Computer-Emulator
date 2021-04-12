@@ -1,0 +1,12 @@
+clock reset
+memory create 0x100
+memory reset
+memory set 0x20 0x04 0x2E 0x10 0x39 0xAA
+cpu reset
+cpu set reg PC 0x20
+clock tick 4
+cpu set reg RE 0xBB
+cpu set reg RF 0xAB
+cpu set reg RG 0x25
+cpu set reg RH 0x39
+cpu dump
